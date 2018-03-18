@@ -1,39 +1,24 @@
 package calculateage;
 
+import java.util.Date;
+
 /**
  *
  * @author Daniel Gurbiel
  */
+
 public class PersonAge {
-    private int year, month, day;
+    private Date date_of_birth;
     
-    public PersonAge(int year, int month, int day) {
-        this.year = year;
-        this.month = month;
-        this.day = day;
+    public PersonAge(int year, int month, int day){
+        date_of_birth = new Date(year, month, day);
     } 
 
-    public int getYear() {
-        return year;
+    public Date getDate_of_birth() {
+        return date_of_birth;
     }
 
-    public int getMonth() {
-        return month;
+    public void setDate_of_birth(Date date_of_birth) {
+        this.date_of_birth = date_of_birth;
     }
-
-    public int getDay() {
-        return day;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    public void setMonth(int month) {
-        this.month = month;
-    }
-
-    public void setDay(int day) {
-        this.day = day;
-    } 
 }
